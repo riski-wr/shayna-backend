@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', "DashboardController@index");
+Route::get('/', "DashboardController@index")->name("dashboard");
 
 Auth::routes(['register' => false]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('products', ProductController::class);
