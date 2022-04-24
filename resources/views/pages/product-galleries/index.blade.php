@@ -32,10 +32,10 @@
                                             </td>
                                             <td>{{ $item->product->is_default ? 'Ya' : 'Tidak' }}</td>
                                             <td>
-                                                <form action="{{ route('product-galleries.destroy', $item->id) }}" method-"POST" class="d-inline">
+                                                <form action="{{ route('product-galleries.destroy', $item->id) }}" method="POST" class="d-inline">
                                                 @method('delete')
                                                 @csrf
-                                                <button class="btn btn-danger btn-sm">
+                                                <button class="btn btn-danger btn-sm" type="submit">
                                                     <i class="fa fa-trash"></i>
                                                 </button>
                                                 </form>

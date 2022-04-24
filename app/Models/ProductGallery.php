@@ -18,6 +18,7 @@ class ProductGallery extends Model
         return $this->belongsTo(Product::class, 'products_id');
     }
 
+    // modify photo arttribute when retrive with eqoulent orm
     public function getPhotoAttribute($value)
     {
         return url('storage/' . $value);
