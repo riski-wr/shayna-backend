@@ -18,3 +18,4 @@ Route::get('/', "DashboardController@index")->name("dashboard");
 Auth::routes(['register' => false]);
 
 Route::resource('products', ProductController::class);
+Route::resource('product-galleries', ProductGalleryController::class);
