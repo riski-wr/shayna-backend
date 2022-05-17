@@ -7,7 +7,7 @@
                 <div class="card">
                      <div class="card-body">
                          <div class="box-title">
-                             Daftar Foto Barang <small>"{{ $product->name }}"</small>
+                             Daftar Foto Barang <small>"{{ $product->name  }}"</small>
                          </div> 
                      </div>
                      <div class="card-body--">
