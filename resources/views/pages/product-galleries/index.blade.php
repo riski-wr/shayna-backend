@@ -30,7 +30,7 @@
                                             <td>
                                                 <img src="{{ url($item->photo) }}" alt="">
                                             </td>
-                                            <td>{{ $item->product->is_default ? 'Ya' : 'Tidak' }}</td>
+                                            <td>{{ $item->is_default ? 'Ya' : 'Tidak' }}</td>
                                             <td>
                                                 <form action="{{ route('product-galleries.destroy', $item->id) }}" method="POST" class="d-inline">
                                                 @method('delete')
